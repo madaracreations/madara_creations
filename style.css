@@ -185,7 +185,7 @@ footer{
 .gallery-home {
     position: relative;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55));
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("assets/Product1.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -472,4 +472,46 @@ footer{
 }
 .tiktok {
     background-color: #C0C0C0; /* gray */
+}
+
+/*mobile accessible*/
+/* ===== GLOBAL MOBILE RESPONSIVE FIX ===== */
+
+@media (max-width: 768px) {
+
+    /* Make everything scale properly */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* All sections become single column */
+    section, .container, .contact-section, .product-section, .gallery {
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        align-items: center;
+    }
+
+    /* Make all boxes full width */
+    .contact-bar, .card, .box, .product-box {
+        width: 90% !important;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Text scaling */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p, span {
+        font-size: 14px;
+    }
 }
