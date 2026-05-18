@@ -185,7 +185,8 @@ footer{
 .gallery-home {
     position: relative;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('assets/Product1.png');
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55));
+    background-image: url("Product1/bg.png");
     background-size: cover;
     background-position: center;
     display: flex;
